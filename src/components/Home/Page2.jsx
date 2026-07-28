@@ -16,7 +16,7 @@ const IMAGES = [
   "https://i.pinimg.com/736x/f6/cd/9b/f6cd9b9c7e655de1c0b49be9637d15c4.jpg",
 ];
 
-export default function HomeAD() {
+export default function Page2() {
   // one opacity value per card, all starting at 100
   const [opacities, setOpacities] = useState(IMAGES.map(() => 100));
 
@@ -49,7 +49,7 @@ export default function HomeAD() {
         />
       </div>
       <div className="mx-[100px]">
-        <div className="flex flex-wrap gap-4 px-[100px] mt-5">
+        <div className="flex flex-wrap justify-center gap-4 px-[100px] mt-5">
           {IMAGES.map((url, index) => {
             const op = opacities[index];
             const color = op < 30 ? "error" : "success";

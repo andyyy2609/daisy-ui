@@ -1,14 +1,14 @@
 import React from "react"
 import { BrowserRouter, Route, Routes } from "react-router-dom"
-import Home from "./components/home/home"
-import HomeAD from "./components/home/HomeAD"
+import Page1 from "./components/home/Page1"
+import Page2 from "./components/home/Page2"
 
 function App() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<Home/>}/>
-        <Route path="/home2" element={<HomeAD/>}/>
+        <Route path="/" element={<Page1/>}/>
+        <Route path="/page2" element={<Page2/>}/>
       </Routes>
     </BrowserRouter>
   )

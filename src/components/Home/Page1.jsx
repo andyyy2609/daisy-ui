@@ -4,10 +4,10 @@ import Card from "../Card/Card";
 import Phone from "../Phone/Phone";
 import FloatingActionButton from "../Button/FAB";
 import Navbar from "../Nav/Navbar";
-import HomeAD from "./HomeAD";
+import HomeAD from "./Page2";
 import { useNavigate } from "react-router-dom";
 
-export default function Home() {
+export default function Page1() {
   const [op, setOp] = useState(100);
   const color = op < 30 ? "error" : "success";
   const navigate = useNavigate();
@@ -22,7 +22,7 @@ export default function Home() {
         />
       </div>
     <div className="mx-[100px]">
-      <div className="flex flex-wrap gap-4 px-[100px] mt-5">
+      <div className="flex flex-wrap justify-around gap-4 px-[100px] mt-5">
         <div>
           <Card
             slot={
@@ -202,8 +202,8 @@ export default function Home() {
                 </div>
                 <div>
 
-      <div className="tooltip tooltip-bottom tooltip-warning" data-tip="Home 1.0">
-        <button className="btn btn-primary" onClick={()=>navigate("/home2")}>Next</button>
+      <div className="tooltip tooltip-bottom tooltip-warning" data-tip="Page 2.0">
+        <button className="btn btn-primary" onClick={()=>navigate("/page2")}>Next</button>
                 </div>
       </div>
       </div>
