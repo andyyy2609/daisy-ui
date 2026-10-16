@@ -4,7 +4,7 @@ import Card from "../Card/Card";
 import Phone from "../Phone/Phone";
 import FloatingActionButton from "../Button/FAB";
 import Navbar from "../Nav/Navbar";
-import HomeAD from "./Page2";
+import Page2 from "./Page2";
 import { useNavigate } from "react-router-dom";
 
 export default function Page1() {
